@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetFisaAng" targetNamespace="http://tempuri.org/DataSetFisaAng.xsd" xmlns:mstns="http://tempuri.org/DataSetFisaAng.xsd" xmlns="http://tempuri.org/DataSetFisaAng.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=HP_ANDREI\SQLEXPRESS;Initial Catalog=ProiectLicenta;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="ProiectLicentaConnectionString" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_FiseAngajatiTableAdapter" GeneratorDataComponentClassName="View_FiseAngajatiTableAdapter" Name="View_FiseAngajati" UserDataComponentName="View_FiseAngajatiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ProiectLicentaConnectionString" DbObjectName="ProiectLicenta.dbo.View_FiseAngajati" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NrFisaAngajat, numeAngajat, prenumeAngajat, CNP, data_semnare_contract FROM dbo.View_FiseAngajati</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NrFisaAngajat" DataSetColumn="NrFisaAngajat" />
+              <Mapping SourceColumn="numeAngajat" DataSetColumn="numeAngajat" />
+              <Mapping SourceColumn="prenumeAngajat" DataSetColumn="prenumeAngajat" />
+              <Mapping SourceColumn="CNP" DataSetColumn="CNP" />
+              <Mapping SourceColumn="data_semnare_contract" DataSetColumn="data_semnare_contract" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetFisaAng" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetFisaAng" msprop:Generator_UserDSName="DataSetFisaAng">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_FiseAngajati" msprop:Generator_TableClassName="View_FiseAngajatiDataTable" msprop:Generator_TableVarName="tableView_FiseAngajati" msprop:Generator_TablePropName="View_FiseAngajati" msprop:Generator_RowDeletingName="View_FiseAngajatiRowDeleting" msprop:Generator_RowChangingName="View_FiseAngajatiRowChanging" msprop:Generator_RowEvHandlerName="View_FiseAngajatiRowChangeEventHandler" msprop:Generator_RowDeletedName="View_FiseAngajatiRowDeleted" msprop:Generator_UserTableName="View_FiseAngajati" msprop:Generator_RowChangedName="View_FiseAngajatiRowChanged" msprop:Generator_RowEvArgName="View_FiseAngajatiRowChangeEvent" msprop:Generator_RowClassName="View_FiseAngajatiRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NrFisaAngajat" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnNrFisaAngajat" msprop:Generator_ColumnPropNameInRow="NrFisaAngajat" msprop:Generator_ColumnPropNameInTable="NrFisaAngajatColumn" msprop:Generator_UserColumnName="NrFisaAngajat" type="xs:int" />
+              <xs:element name="numeAngajat" msprop:Generator_ColumnVarNameInTable="columnnumeAngajat" msprop:Generator_ColumnPropNameInRow="numeAngajat" msprop:Generator_ColumnPropNameInTable="numeAngajatColumn" msprop:Generator_UserColumnName="numeAngajat">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="prenumeAngajat" msprop:Generator_ColumnVarNameInTable="columnprenumeAngajat" msprop:Generator_ColumnPropNameInRow="prenumeAngajat" msprop:Generator_ColumnPropNameInTable="prenumeAngajatColumn" msprop:Generator_UserColumnName="prenumeAngajat">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CNP" msprop:Generator_ColumnVarNameInTable="columnCNP" msprop:Generator_ColumnPropNameInRow="CNP" msprop:Generator_ColumnPropNameInTable="CNPColumn" msprop:Generator_UserColumnName="CNP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="data_semnare_contract" msprop:Generator_ColumnVarNameInTable="columndata_semnare_contract" msprop:Generator_ColumnPropNameInRow="data_semnare_contract" msprop:Generator_ColumnPropNameInTable="data_semnare_contractColumn" msprop:Generator_UserColumnName="data_semnare_contract" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_FiseAngajati" />
+      <xs:field xpath="mstns:NrFisaAngajat" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
